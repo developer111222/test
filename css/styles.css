@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+     font-family: 
+    SF Pro Display;;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background: #F8F5F0;
+    max-width: 1512px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 160px 16px 160px;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    color: #1F392C;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #1F392C;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #007BFF;
+    font-weight: normal;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.button button {
+    padding: 10px 20px;
+    color: #1F392C;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #FF60E6;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+   
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Initially hidden off-screen to the right */
+        height: 100vh;
+        width: 250px; /* Adjust width as needed */
+        background-color: #F8F5F0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000; /* Ensure it overlays other content */
+    }
+
+    .nav ul {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav.show {
+        right: 0; /* Slide in from the right */
+    }
+
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 10px;
+        margin-top: 10px;
+        position: relative;
+        z-index: 1001; /* Ensure it overlays the nav menu */
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 4px;
+        background: #1F392C;
+        border-radius: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        position: absolute;
+        width: 30px;
+    }
+
+    .hamburger::before {
+        transform: translateY(-10px);
+    }
+
+    .hamburger::after {
+        transform: translateY(10px);
+    }
+
+    .nav-toggle.active .hamburger {
+        transform: rotate(45deg);
+    }
+
+    .nav-toggle.active .hamburger::before {
+        transform: rotate(90deg) translateX(10px);
+    }
+
+    .nav-toggle.active .hamburger::after {
+        transform: rotate(90deg) translateX(-10px);
+    }
+}
+
+.section-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: 
+    #F8F5F0;
+}
+.left-side{
+    width: 414px;
+    background-image: url('../images/Line\ \(1\).png');
+    background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  height: 100vh;
+}
+.bulb{
+position: absolute;
+width: 45px;
+height: 70px;
+top: 170px;
+transform: rotate(345deg);
+}
+.ins{
+    position: absolute;
+    top: 260px;
+    left: 30px;
+}
+.fb{
+    position: absolute;
+    width: 45px;
+height: 45px;
+bottom: 25px;
+left: 100px;
+transform: rotate(315deg);
+}
+.center{
+    width: 977px;
+    height: 528px;
+}
+.center h1{
+    font-size: 87px;
+    line-height: 98px;
+    text-align: center;
+    font-family: 
+    SF Pro Display;
+}
+.center p{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 
+    SF Pro Display;
+   
+}
+
+.email-signup {
+    display: flex;
+    align-items: center;
+    background-color: white; /* bg-muted */
+    padding: 10px;
+    border-radius: 999px; /* rounded-full */
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.email-signup input[type="email"] {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #6c757d; /* text-muted-foreground */
+    padding: 10px 20px;
+    border-radius: 999px; /* rounded-full */
+    font-size: 16px;
+}
+
+.email-signup button {
+    background-color: #FF60E6; /* bg-accent */
+    color: black; /* text-accent-foreground */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 999px; /* rounded-full */
+    margin-left: 10px; /* ml-2 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    font-weight: 500;
+}
+.right-side{
+    margin-top: 50px;
+    width: 414px;
+    height: 100vh;
+    background: url("/images/Line.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: right;
+    position: relative;
+}
+.right-bulb{
+    position: absolute;
+    width: 67px;
+    height: 105px;
+    top: 130px;
+    left: -20px;
+}
+.right-hand{
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.right-ytb{
+   
+  position: absolute;
+  bottom: 100px;
+  left: 120px;
+}
+
+
+@media (max-width: 1024px) {
+    .section-1 {
+        display: flex;
+        padding: 20px;
+        height: auto;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .center {
+        width: 100%;
+        text-align: center;
+    }
+
+    .center h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .center p {
+        font-size: 16px;
+    }
+
+  
+
+    .email-signup input[type="email"],
+    .email-signup button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .email-signup button {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+   .header{
+  padding: 10px;
+   }
+
+    .nav {
+        order: -1;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+       
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button {
+      
+        width: 34%;
+        justify-content: center;
+    }
+
+    .section-1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-side, .right-side {
+        background-image: none;
+    }
+
+    img.left-side-hand {
+        width:200px
+    }
+    
+    img.bulb {
+        top: 98px;
+        right: 10px;
+    }
+    
+    
+    img.fb {
+        left: 38px;
+        bottom: 20px;
+    }
+    
+    img.ins {
+        top: 223px;
+        left: 0px;
+    }
+    .right-side{
+        margin: 0;
+    }
+    img.right-hand {
+        width: 119px;
+    }
+    
+    img.right-bulb {
+        top:-225px;
+        left:56px;
+    }
+    
+    img.right-ytb {
+        bottom: 29px;
+        left: 20px;
+    }
+    
+    img.right-fb {
+        position: absolute;
+        right:0px;
+        top: -243px;
+    }
+    .center {
+        width: 100%;
+        text-align: center;
+    }
+
+    .center h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .center p {
+        font-size: 14px;
+    }
+
+   
+
+    .email-signup input[type="email"]
+     {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .email-signup button {
+        margin-left: 0;
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .nav ul li a {
+        font-size: 14px;
+    }
+
+    .button button {
+      
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .center h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .center p {
+        font-size: 12px;
+    }
+
+    .email-signup input[type="email"]{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .email-signup button {
+        margin-left: 0;
+        width: 150px;
+    }
+}
