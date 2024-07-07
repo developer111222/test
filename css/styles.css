@@ -298,6 +298,7 @@ transform: rotate(315deg);
     background-size: contain;
     overflow: hidden;
     padding: 50px 0;
+   
 }
 
 .section-2 h2{
@@ -396,9 +397,11 @@ transform: rotate(315deg);
 .section-3{
    padding: 50px 0;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .section-3 h2{
-    width: 977px;
+    max-width: 977px;
     margin: 0 auto;
     text-align: center;
     font-size: 60px;
@@ -550,6 +553,29 @@ transform: rotate(315deg);
     .email-signup button {
         margin-left: 0;
         width: 150px;
+    }
+
+    .section-2 h2{
+        font-size: 30px;
+        line-height: 40px;
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .text-section{
+        width: 33%;
+    }
+    .info-card{
+        width: 315px;
+    }
+    .section-3 h2{
+        
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .illustration{
+        width: 100%;
     }
 }
 
