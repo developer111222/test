@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #F8F5F0;
 }
 .header {
     background: #F8F5F0;
@@ -287,6 +288,122 @@ transform: rotate(315deg);
   position: absolute;
   bottom: 100px;
   left: 120px;
+}
+
+/* section 2 */
+
+.section-2{
+    background: url("/images//Vector.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.section-2 h2{
+    width: 977px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 60px;
+    line-height: 50px;
+
+   
+}
+.bottom-vector{
+    width: 700px;
+    margin: 0 auto;
+    text-align: right;
+    margin-bottom: 50px;
+}
+.container {
+    width:1092px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    padding: 40px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+}
+
+.text-section {
+    width: 530px;
+    padding: 1rem;
+}
+
+.text-section {
+    margin-bottom: 1.5rem;
+}
+
+.text-section h2 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #1F392C;
+}
+
+.text-section p {
+    color: #6c757d;
+    font-size: 20px;
+}
+.half{
+    display: -webkit-box;
+    gap: 20px;
+    
+}
+
+.info-card {
+   
+    background-color:#FF60E6;
+    padding: 1rem;
+    width: 400px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.info-card-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.info-card img {
+    margin-right: 1rem;
+}
+
+.info-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1F392C;
+}
+
+.info-card p {
+   
+    font-size: 16px;
+}
+
+.info-card.accent {
+    background-color: #FFADF2;
+}
+
+.info-card.accent p {
+    color: #1F392C;
+}
+
+
+
+/* section-3 */
+.section-3{
+   padding: 50px 0;
+    text-align: center;
+}
+.section-3 h2{
+    width: 977px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 60px;
+    line-height: 50px;
+    margin-bottom: 50px;
 }
 
 
