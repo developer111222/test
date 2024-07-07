@@ -574,6 +574,9 @@ transform: rotate(315deg);
         font-size: 30px;
         line-height: 40px;
     }
+    .bottom-vector{
+       width: 100%; 
+    }
     .illustration{
         width: 100%;
     }
@@ -597,7 +600,7 @@ transform: rotate(315deg);
     }
 
     .center h1 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 40px;
     }
 
